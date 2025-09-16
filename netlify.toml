@@ -6,7 +6,6 @@
 [build.environment]
   NODE_VERSION = "20"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# официальный плагин Netlify для Next.js
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
