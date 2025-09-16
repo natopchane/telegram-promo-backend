@@ -1,8 +1,22 @@
 {
-  "name": "telegram-promo-root",
+  "name": "telegram-promo-backend",
+  "version": "1.0.0",
   "private": true,
+  "description": "Express + Mongo + Firebase Admin (Render ready)",
   "scripts": {
-    "dev:all": "start \"BACK\" cmd /k \"cd /d backend && npm start\" && cd /d frontend && npm run dev",
-    "install:all": "cd /d backend && npm install && cd /d ..\\frontend && npm install"
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18 <23"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "firebase-admin": "^12.5.0",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3"
   }
 }
