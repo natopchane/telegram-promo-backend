@@ -1,0 +1,8 @@
+{
+  "name": "telegram-promo-root",
+  "private": true,
+  "scripts": {
+    "dev:all": "start \"BACK\" cmd /k \"cd /d backend && npm start\" && cd /d frontend && npm run dev",
+    "install:all": "cd /d backend && npm install && cd /d ..\\frontend && npm install"
+  }
+}
